@@ -50,8 +50,8 @@ kind: Ingress
 metadata:
   name: capacitor-ingress
   namespace: flux-system
+  kubernetes.io/ingress.class: nginx
 spec:
-  ingressClassName: nginx-internal
   rules:
     - host: gitops.home
       http:
