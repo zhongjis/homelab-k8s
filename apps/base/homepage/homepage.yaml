@@ -218,7 +218,7 @@ spec:
           volumeMounts:
             - mountPath: /app/config # Mount the entire config map here
               name: homepage-config
-            - mountPath: /app/logs # Mount logs to a separate top-level directory
+            - mountPath: /app/config/logs # Mount logs to a separate top-level directory
               name: logs
       volumes:
         - name: homepage-config
