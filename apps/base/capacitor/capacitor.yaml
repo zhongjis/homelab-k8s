@@ -27,23 +27,6 @@ spec:
   sourceRef:
     kind: OCIRepository
     name: capacitor
-  patches:
-    - patch: |-
-        - op: add
-          path: /spec/loadBalancerIP
-          value: "192.168.50.129"
-      target:
-        kind: Service
-        name: capacitor
-        namespace: flux-system
-    - patch: |-
-        - op: replace
-          path: /spec/type
-          value: "LoadBalancer"
-      target:
-        kind: Service
-        name: capacitor
-        namespace: flux-system
 
 ---
 apiVersion: networking.k8s.io/v1
