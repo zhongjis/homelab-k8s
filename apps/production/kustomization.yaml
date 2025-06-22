@@ -3,7 +3,3 @@ kind: Kustomization
 resources:
   - ../base/capacitor
   - ../base/homepage
-# patches:
-#   - path: podinfo-values.yaml
-#     target:
-#       kind: HelmRelease
