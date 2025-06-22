@@ -49,18 +49,25 @@ data:
     - Developer:
         - Github:
             - abbr: GH
-              href: https://github.com/
+              href: https://github.com/zhongjis
   services.yaml: |
-    - My First Group:
-        - My First Service:
-            href: http://localhost/
+    - Infra:
+        - Pi-hole:
+            href: http://pihole.home/admin
             description: Homepage is awesome
-
-    - My Second Group:
-        - My Second Service:
-            href: http://localhost/
+        - Unifi Network:
+            href: http://network.home/
+            description: Homepage is awesome
+        - Capacitor:
+            href: http://gitops.home/
+            description: FluxCD UI
+        - TrueNAS:
+            href: http://truenas.home/
             description: Homepage is the best
-
+    - Media:
+        - Nextcloud:
+            href: http://nextcloud.home/
+            description: Homepage is the best
     - My Third Group:
         - My Third Service:
             href: http://localhost/
