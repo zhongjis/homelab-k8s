@@ -22,18 +22,32 @@ data:
             - abbr: GH
               href: https://github.com/zhongjis
   services.yaml: |
-    - Infra:
+    - Network:
         - Pi-hole:
             href: http://pihole.home/admin
             description: Homepage is awesome
         - Unifi Network:
             href: http://network.home/
             description: Homepage is awesome
+    - Infra:
         - Capacitor:
             href: http://gitops.home/
             description: FluxCD UI
         - TrueNAS:
             href: http://truenas.home/
+            description: Homepage is the best
+    - Monitoring:
+        - grafana:
+            href: http://grafana.monitoring.home/
+            description: Homepage is the best
+        - alertmanager:
+            href: http://alertmanager.monitoring.home/
+            description: Homepage is the best
+        - prometheus:
+            href: http://prometheus.monitoring.home/
+            description: Homepage is the best
+        - thanosRuler:
+            href: http://thanosrulder.monitoring.home/
             description: Homepage is the best
     - Media:
         - Nextcloud:

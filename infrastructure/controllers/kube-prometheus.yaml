@@ -1,0 +1,62 @@
+# NOTE: https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: monitoring-system
+  labels:
+    toolkit.fluxcd.io/tenant: sre-team
+
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: prometheus-community
+  namespace: monitoring-system
+spec:
+  interval: 24h
+  url: https://prometheus-community.github.io/helm-charts
+
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: kube-prometheus-stack
+  namespace: monitoring-system
+spec:
+  interval: 30m
+  chart:
+    spec:
+      chart: kube-prometheus-stack
+      version: "0.83"
+      sourceRef:
+        kind: HelmRepository
+        name: prometheus-community
+        namespace: monitoring-system
+      interval: 12h
+  values:
+    alertmanager:
+      ingress:
+        enabled: true
+        ingressClassName: nginx-internal
+        hosts:
+          - alertmanager.monitoring.home
+    grafana:
+      ingress:
+        enabled: true
+        ingressClassName: nginx-internal
+        hosts:
+          - grafana.monitoring.home
+    prometheus:
+      ingress:
+        enabled: true
+        ingressClassName: nginx-internal
+        hosts:
+          - prometheus.monitoring.home
+    thanosRuler:
+      ingress:
+        enabled: true
+        ingressClassName: nginx-internal
+        hosts:
+          - thanosruler.monitoring.home
