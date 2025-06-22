@@ -1,0 +1,62 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: dify
+  namespace: dify
+spec:
+  interval: 30m
+  chart:
+    spec:
+      chart: dify
+      version: "*"
+      sourceRef:
+        kind: HelmRepository
+        name: dify
+        namespace: dify
+      interval: 12h
+  values:
+    ingress:
+      enabled: true
+      annotations:
+        kubernetes.io/ingress.class: nginx-internal
+        # kubernetes.io/tls-acme: "true"
+        # nginx.ingress.kubernetes.io/backend-protocol: HTTP
+        # nginx.ingress.kubernetes.io/proxy-body-size: 15m
+        # nginx.ingress.kubernetes.io/ssl-redirect: "true"
+      hosts:
+        - host: dify.home
+          paths:
+            - path: /
+              pathType: ImplementationSpecific
+        # - host: dify-example2.local
+        #   paths:
+        #     - path: /
+        #       pathType: Prefix
+      tls: []
+      #  - secretName: chart-example-tls
+      #    hosts:
+      #      - dify-example.local
+    api:
+      persistence:
+        persistenceVolumeClaim:
+          storageClass: longhorn
+    proxy:
+      log:
+        persistence:
+          enabled: true
+          persistenceVolumeClaim:
+            storageClass: longhorn
+    pluginDaemon:
+      persistence:
+        persistenceVolumeClaim:
+          storageClass: longhorn
+    postgresql:
+      primary:
+        persistence:
+          persistenceVolumeClaim:
+            storageClass: longhorn
+      readReplicas:
+        persistence:
+          persistenceVolumeClaim:
+            storageClass: longhorn
