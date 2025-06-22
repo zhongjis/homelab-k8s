@@ -36,9 +36,10 @@ spec:
         kind: Service
         name: capacitor
         namespace: flux-system
-    - patch: |
-        spec:
-          type: LoadBalancer
+    - patch: |-
+        - op: replace
+          path: /spec/type
+          value: "LoadBalancer"
       target:
         kind: Service
         name: capacitor
