@@ -21,8 +21,8 @@ spec:
       annotations:
         kubernetes.io/ingress.class: nginx-internal
         # kubernetes.io/tls-acme: "true"
-        # nginx.ingress.kubernetes.io/backend-protocol: HTTP
-        # nginx.ingress.kubernetes.io/proxy-body-size: 15m
+        nginx.ingress.kubernetes.io/backend-protocol: HTTP
+        nginx.ingress.kubernetes.io/proxy-body-size: 15m
         # nginx.ingress.kubernetes.io/ssl-redirect: "true"
       hosts:
         - host: dify.home
