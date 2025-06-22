@@ -36,6 +36,13 @@ spec:
         kind: Service
         name: capacitor
         namespace: flux-system
+    - patch: |
+        spec:
+          type: LoadBalancer
+      target:
+        kind: Service
+        name: capacitor
+        namespace: flux-system
 
 ---
 apiVersion: networking.k8s.io/v1
