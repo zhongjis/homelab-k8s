@@ -41,12 +41,6 @@ spec:
       persistence:
         persistenceVolumeClaim:
           storageClass: longhorn
-    proxy:
-      log:
-        persistence:
-          enabled: true
-          persistenceVolumeClaim:
-            storageClass: longhorn
     pluginDaemon:
       persistence:
         persistenceVolumeClaim:
