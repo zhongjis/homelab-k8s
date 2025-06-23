@@ -7,7 +7,7 @@ metadata:
     toolkit.fluxcd.io/tenant: sre-team
 
 ---
-apiVersion: source.toolkit.fluxcd.io/v1
+apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: OCIRepository
 metadata:
   name: external-dns
@@ -16,7 +16,7 @@ spec:
   interval: 5m
   url: oci://registry-1.docker.io/bitnamicharts/external-dns
   ref:
-    tag: "8.8.*"
+    semver: "8.8.x"
 
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2
