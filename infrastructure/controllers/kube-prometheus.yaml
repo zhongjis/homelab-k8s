@@ -39,6 +39,12 @@ spec:
     alertmanager:
       ingress:
         enabled: true
+        annotations:
+          gethomepage.dev/description: Prometheus AlertManager
+          gethomepage.dev/enabled: "true"
+          gethomepage.dev/group: Cluster Monitoring
+          gethomepage.dev/icon: alertmanager.png
+          gethomepage.dev/name: AlertManager
         ingressClassName: nginx-internal
         paths:
           - /
@@ -48,6 +54,12 @@ spec:
     grafana:
       ingress:
         enabled: true
+        annotations:
+          gethomepage.dev/description: Dashboard Waaaaaa!
+          gethomepage.dev/enabled: "true"
+          gethomepage.dev/group: Cluster Monitoring
+          gethomepage.dev/icon: grafana.png
+          gethomepage.dev/name: Grafana
         ingressClassName: nginx-internal
         paths:
           - /
@@ -57,6 +69,12 @@ spec:
     prometheus:
       ingress:
         enabled: true
+        annotations:
+          gethomepage.dev/description: Monitor your applications, systems, and services with the leading open source monitoring solution. Instrument, collect, store, and query your metrics for alerting, dashboarding, and other use cases.
+          gethomepage.dev/enabled: "true"
+          gethomepage.dev/group: Cluster Monitoring
+          gethomepage.dev/icon: prometheus.png
+          gethomepage.dev/name: Prometheus
         ingressClassName: nginx-internal
         paths:
           - /
@@ -66,6 +84,12 @@ spec:
     thanosRuler:
       ingress:
         enabled: true
+        annotations:
+          gethomepage.dev/description: Thanos provides a global query view, high availability, data backup with historical, cheap data access as its core features in a single binary.
+          gethomepage.dev/enabled: "true"
+          gethomepage.dev/group: Cluster Monitoring
+          gethomepage.dev/icon: thanosrulder.png
+          gethomepage.dev/name: ThanosRuler
         ingressClassName: nginx-internal
         paths:
           - /
