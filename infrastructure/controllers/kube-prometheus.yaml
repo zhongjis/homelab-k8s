@@ -47,7 +47,7 @@ spec:
           gethomepage.dev/name: AlertManager
         ingressClassName: nginx-internal
         hosts:
-          - alertmanager.home
+          - alertmanager.monitoring.home
     grafana:
       ingress:
         enabled: true
@@ -59,7 +59,7 @@ spec:
           gethomepage.dev/name: Grafana
         ingressClassName: nginx-internal
         hosts:
-          - grafana.home
+          - grafana.monitoring.home
     prometheus:
       ingress:
         enabled: true
@@ -71,7 +71,7 @@ spec:
           gethomepage.dev/name: Prometheus
         ingressClassName: nginx-internal
         hosts:
-          - prometheus.home
+          - prometheus.monitoring.home
     thanosRuler:
       ingress:
         enabled: true
@@ -83,4 +83,4 @@ spec:
           gethomepage.dev/name: ThanosRuler
         ingressClassName: nginx-internal
         hosts:
-          - thanosruler.home
+          - thanosruler.monitoring.home
