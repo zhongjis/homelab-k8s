@@ -19,7 +19,6 @@ spec:
     ingress:
       enabled: true
       annotations:
-        kubernetes.io/ingress.class: nginx-internal
         # kubernetes.io/tls-acme: "true"
         nginx.ingress.kubernetes.io/backend-protocol: HTTP
         nginx.ingress.kubernetes.io/proxy-body-size: 15m
@@ -28,6 +27,7 @@ spec:
         gethomepage.dev/enabled: "true"
         gethomepage.dev/group: Applications
         gethomepage.dev/name: Dify
+      className: nginx-internal
       hosts:
         - host: dify.home
           paths:
