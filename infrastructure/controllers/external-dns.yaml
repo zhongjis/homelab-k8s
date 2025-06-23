@@ -52,10 +52,8 @@ spec:
       server: http://pihole.home
     extraEnvVars:
       - name: EXTERNAL_DNS_PIHOLE_PASSWORD
-        valueFrom:
-          secretKeyRef:
-            name: pihole-password
-            key: password
+        # TODO: fix this
+        value: admin
     serviceAccount:
       create: true
       name: "external-dns"
