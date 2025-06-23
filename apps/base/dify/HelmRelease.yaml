@@ -24,6 +24,11 @@ spec:
         nginx.ingress.kubernetes.io/backend-protocol: HTTP
         nginx.ingress.kubernetes.io/proxy-body-size: 15m
         # nginx.ingress.kubernetes.io/ssl-redirect: "true"
+        gethomepage.dev/description: Production-ready platform for agentic workflow development.
+        gethomepage.dev/enabled: "true"
+        gethomepage.dev/group: Applications
+        gethomepage.dev/icon: dify.png
+        gethomepage.dev/name: Dify
       hosts:
         - host: dify.home
           paths:

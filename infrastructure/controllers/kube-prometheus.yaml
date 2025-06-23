@@ -70,7 +70,7 @@ spec:
       ingress:
         enabled: true
         annotations:
-          gethomepage.dev/description: Monitor your applications, systems, and services with the leading open source monitoring solution. Instrument, collect, store, and query your metrics for alerting, dashboarding, and other use cases.
+          gethomepage.dev/description: Monitor your applications, systems, and services!
           gethomepage.dev/enabled: "true"
           gethomepage.dev/group: Cluster Monitoring
           gethomepage.dev/icon: prometheus.png

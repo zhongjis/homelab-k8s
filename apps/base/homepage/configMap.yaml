@@ -29,10 +29,7 @@ data:
         - Unifi Network:
             href: http://network.home/
             description: Homepage is awesome
-    - Infra:
-        - Capacitor:
-            href: http://gitops.home/
-            description: FluxCD UI
+    - NAS:
         - TrueNAS:
             href: http://truenas.home/
             description: Homepage is the best
@@ -49,12 +46,9 @@ data:
         - thanosRuler:
             href: http://thanosruler.monitoring.home/
             description: Homepage is the best
-    - Media:
+    - Applications:
         - Nextcloud:
             href: http://nextcloud.home/
-            description: Homepage is the best
-        - Dify:
-            href: http://dify.home/
             description: Homepage is the best
     - My Third Group:
         - My Third Service:
