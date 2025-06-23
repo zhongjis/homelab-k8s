@@ -26,6 +26,7 @@ data:
         - Pi-hole:
             href: http://pihole.home/admin
             description: Homepage is awesome
+            icon: pihole.png
         - Unifi Network:
             href: http://network.home/
             description: Homepage is awesome
@@ -50,10 +51,6 @@ data:
         - Nextcloud:
             href: http://nextcloud.home/
             description: Homepage is the best
-    - My Third Group:
-        - My Third Service:
-            href: http://localhost/
-            description: Homepage is 😎
   widgets.yaml: |
     - kubernetes:
         cluster:
