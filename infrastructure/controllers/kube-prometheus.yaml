@@ -46,9 +46,6 @@ spec:
           gethomepage.dev/icon: alertmanager.png
           gethomepage.dev/name: AlertManager
         ingressClassName: nginx-internal
-        paths:
-          - /
-        pathType: ImplementationSpecific
         hosts:
           - alertmanager.monitoring.home
     grafana:
@@ -61,9 +58,6 @@ spec:
           gethomepage.dev/icon: grafana.png
           gethomepage.dev/name: Grafana
         ingressClassName: nginx-internal
-        paths:
-          - /
-        pathType: ImplementationSpecific
         hosts:
           - grafana.monitoring.home
     prometheus:
@@ -76,9 +70,6 @@ spec:
           gethomepage.dev/icon: prometheus.png
           gethomepage.dev/name: Prometheus
         ingressClassName: nginx-internal
-        paths:
-          - /
-        pathType: ImplementationSpecific
         hosts:
           - prometheus.monitoring.home
     thanosRuler:
@@ -91,8 +82,5 @@ spec:
           gethomepage.dev/icon: thanosrulder.png
           gethomepage.dev/name: ThanosRuler
         ingressClassName: nginx-internal
-        paths:
-          - /
-        pathType: ImplementationSpecific
         hosts:
           - thanosruler.monitoring.home
