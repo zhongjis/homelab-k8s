@@ -32,7 +32,7 @@ spec:
       sourceRef:
         kind: OCIRepository
         name: external-dns
-        namespace: default
+        namespace: external-dns
       interval: 12h
   values:
     provider: pihole
