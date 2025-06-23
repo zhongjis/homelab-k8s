@@ -29,7 +29,6 @@ spec:
   chart:
     spec:
       interval: 5m
-      chart: external-dns
       sourceRef:
         kind: OCIRepository
         name: external-dns
