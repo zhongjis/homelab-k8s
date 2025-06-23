@@ -27,7 +27,6 @@ spec:
         gethomepage.dev/description: Production-ready platform for agentic workflow development.
         gethomepage.dev/enabled: "true"
         gethomepage.dev/group: Applications
-        gethomepage.dev/icon: dify.png
         gethomepage.dev/name: Dify
       hosts:
         - host: dify.home

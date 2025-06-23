@@ -26,7 +26,6 @@ data:
         - Pi-hole:
             href: http://pihole.home/admin
             description: Homepage is awesome
-            icon: pihole.png
         - Unifi Network:
             href: http://network.home/
             description: Homepage is awesome
