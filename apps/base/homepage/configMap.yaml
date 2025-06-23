@@ -47,7 +47,7 @@ data:
             href: http://prometheus.monitoring.home/
             description: Homepage is the best
         - thanosRuler:
-            href: http://thanosrulder.monitoring.home/
+            href: http://thanosruler.monitoring.home/
             description: Homepage is the best
     - Media:
         - Nextcloud:
