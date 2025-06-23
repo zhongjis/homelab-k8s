@@ -37,7 +37,7 @@ spec:
     policy: upsert-only
     txtOwnerId: "homelab"
     pihole:
-      server: http://pihole.home
+      server: http://192.168.50.2
     extraEnvVars:
       - name: EXTERNAL_DNS_PIHOLE_PASSWORD
         value: admin
