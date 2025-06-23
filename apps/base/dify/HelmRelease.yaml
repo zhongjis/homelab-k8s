@@ -20,8 +20,8 @@ spec:
       enabled: true
       annotations:
         # kubernetes.io/tls-acme: "true"
-        nginx.ingress.kubernetes.io/backend-protocol: HTTP
-        nginx.ingress.kubernetes.io/proxy-body-size: 15m
+        # nginx.ingress.kubernetes.io/backend-protocol: HTTP
+        # nginx.ingress.kubernetes.io/proxy-body-size: 15m
         # nginx.ingress.kubernetes.io/ssl-redirect: "true"
         gethomepage.dev/description: Production-ready platform for agentic workflow development.
         gethomepage.dev/enabled: "true"
