@@ -13,10 +13,10 @@ metadata:
   name: external-dns
   namespace: external-dns
 spec:
-  interval: 24h
+  interval: 5m
   url: oci://registry-1.docker.io/bitnamicharts/external-dns
   ref:
-    semver: "8.8.*"
+    tag: "8.8.*"
 
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2
