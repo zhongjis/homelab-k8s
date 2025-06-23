@@ -39,24 +39,32 @@ spec:
     alertmanager:
       ingress:
         enabled: true
-        ingressClassName: nginx-internal
+        annotations:
+          kubernetes.io/ingress.class: nginx-internal
+        pathType: ImplementationSpecific
         hosts:
           - alertmanager.monitoring.home
     grafana:
       ingress:
         enabled: true
-        ingressClassName: nginx-internal
+        annotations:
+          kubernetes.io/ingress.class: nginx-internal
+        pathType: ImplementationSpecific
         hosts:
           - grafana.monitoring.home
     prometheus:
       ingress:
         enabled: true
-        ingressClassName: nginx-internal
+        annotations:
+          kubernetes.io/ingress.class: nginx-internal
+        pathType: ImplementationSpecific
         hosts:
           - prometheus.monitoring.home
     thanosRuler:
       ingress:
         enabled: true
-        ingressClassName: nginx-internal
+        annotations:
+          kubernetes.io/ingress.class: nginx-internal
+        pathType: ImplementationSpecific
         hosts:
           - thanosruler.monitoring.home
