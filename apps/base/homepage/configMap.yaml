@@ -33,23 +33,10 @@ data:
         - TrueNAS:
             href: http://truenas.home/
             description: Homepage is the best
-    - Monitoring:
-        - grafana:
-            href: http://grafana.monitoring.home/
-            description: Homepage is the best
-        - alertmanager:
-            href: http://alertmanager.monitoring.home/
-            description: Homepage is the best
-        - prometheus:
-            href: http://prometheus.monitoring.home/
-            description: Homepage is the best
-        - thanosRuler:
-            href: http://thanosruler.monitoring.home/
-            description: Homepage is the best
     - Applications:
         - Nextcloud:
             href: http://nextcloud.home/
-            description: Homepage is the best
+            description: A suite of client-server software for creating and using file hosting services.
   widgets.yaml: |
     - kubernetes:
         cluster:

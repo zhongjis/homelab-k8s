@@ -35,12 +35,6 @@ metadata:
   namespace: homepage-system
   labels:
     app.kubernetes.io/name: homepage
-  annotations:
-    gethomepage.dev/description: Dynamically Detected Homepage
-    gethomepage.dev/enabled: "true"
-    gethomepage.dev/group: Cluster Management
-    gethomepage.dev/icon: homepage.png
-    gethomepage.dev/name: Homepage
 spec:
   rules:
     - host: "index.home"
