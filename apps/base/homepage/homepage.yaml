@@ -36,7 +36,7 @@ metadata:
   labels:
     app.kubernetes.io/name: homepage
 spec:
-  ingressClassName: nginx-internal
+  ingressClassName: nginx
   rules:
     - host: "index.home"
       http:

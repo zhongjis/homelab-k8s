@@ -27,7 +27,7 @@ spec:
         gethomepage.dev/enabled: "true"
         gethomepage.dev/group: Applications
         gethomepage.dev/name: Dify
-      className: nginx-internal
+      className: nginx
       hosts:
         - host: dify.home
           paths:

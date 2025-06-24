@@ -45,7 +45,7 @@ spec:
           gethomepage.dev/group: Cluster Monitoring
           gethomepage.dev/icon: alertmanager.png
           gethomepage.dev/name: AlertManager
-        ingressClassName: nginx-internal
+        ingressClassName: nginx
         hosts:
           - alertmanager.monitoring.home
     grafana:
@@ -57,7 +57,7 @@ spec:
           gethomepage.dev/group: Cluster Monitoring
           gethomepage.dev/icon: grafana.png
           gethomepage.dev/name: Grafana
-        ingressClassName: nginx-internal
+        ingressClassName: nginx
         hosts:
           - grafana.monitoring.home
     prometheus:
@@ -69,7 +69,7 @@ spec:
           gethomepage.dev/group: Cluster Monitoring
           gethomepage.dev/icon: prometheus.png
           gethomepage.dev/name: Prometheus
-        ingressClassName: nginx-internal
+        ingressClassName: nginx
         hosts:
           - prometheus.monitoring.home
     thanosRuler:
@@ -81,6 +81,6 @@ spec:
           gethomepage.dev/group: Cluster Monitoring
           gethomepage.dev/icon: thanosrulder.png
           gethomepage.dev/name: ThanosRuler
-        ingressClassName: nginx-internal
+        ingressClassName: nginx
         hosts:
           - thanosruler.monitoring.home
