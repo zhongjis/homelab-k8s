@@ -54,7 +54,6 @@ metadata:
     gethomepage.dev/description: A general purpose UI for FluxCD.
     gethomepage.dev/enabled: "true"
     gethomepage.dev/group: Cluster Management
-    gethomepage.dev/icon: capacitor.png
     gethomepage.dev/name: Capacitor
 spec:
   ingressClassName: nginx-internal
