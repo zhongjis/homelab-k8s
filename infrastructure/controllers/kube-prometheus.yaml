@@ -72,15 +72,3 @@ spec:
         ingressClassName: nginx
         hosts:
           - prometheus.monitoring.home
-    thanosRuler:
-      ingress:
-        enabled: true
-        annotations:
-          gethomepage.dev/description: Thanos provides a global query view, high availability, data backup with historical, cheap data access as its core features in a single binary.
-          gethomepage.dev/enabled: "true"
-          gethomepage.dev/group: Cluster Monitoring
-          gethomepage.dev/icon: thanosrulder.png
-          gethomepage.dev/name: ThanosRuler
-        ingressClassName: nginx
-        hosts:
-          - thanosruler.monitoring.home
